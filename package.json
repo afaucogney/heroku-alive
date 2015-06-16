@@ -1,6 +1,6 @@
 {
   "name": "heroku-alive",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Cyclic task that request a HTTP request to itself, to keep alive a Heroku Free Dyno",
   "main": "heroku-alive.js",
   "scripts": {
