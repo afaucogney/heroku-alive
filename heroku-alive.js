@@ -4,19 +4,19 @@
 
 var http = require('http');
 
-exports.startKeepAlive = function startKeepAlive() {
+exports.startKeepAlive = function startKeepAlive(minuteDelay, hostName, hostPort) {
   setInterval(function() {
     var options = {
-      host: 'vinkipedia.herokuapp.com',
-      port: 80,
+      host: hostName,
+      port: hostPort,
       path: '/'
     };
     http.get(options, function(res) {
       res.on('data', function(chunk) {
         try {
           // optional logging... disable after it's working
-          //console.log("HEROKU RESPONSE: " + chunk);
-          console.log("KeepAlive");
+          //  console.log("HEROKU RESPONSE: " + chunk);
+          // console.log("KeepAlive");
         } catch (err) {
           console.log(err.message);
         }
@@ -24,7 +24,7 @@ exports.startKeepAlive = function startKeepAlive() {
     }).on('error', function(err) {
       console.log("Error: " + err.message);
     });
-  }, 20  * 60 * 1000); // load every 20 minutes
+  }, minuteDelay  * 60 * 1000); // load every 20 minutes
 };
 
 
