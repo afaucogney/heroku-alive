@@ -1,20 +1,15 @@
 {
   "name": "heroku-alive",
-  "version": "0.0.1",
-  "description": "Cyclic task that request a HTTP to itself, to keep alive a server on Herokuy",
+  "version": "0.0.2",
+  "description": "Cyclic task that request a HTTP request to itself, to keep alive a Heroku Free Dyno",
   "main": "heroku-alive.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "heroku",
-    "alive",
-    "don't",
-    "slepp"
+    "alive"
   ],
   "author": "Anthony Faucogney <anthony.faucogney@millezimu.fr>",
-  "license": "ISC",
-  "dependencies": {
-    "http": "0.0.0"
-  }
+  "license": "ISC"
 }
