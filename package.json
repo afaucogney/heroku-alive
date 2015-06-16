@@ -10,6 +10,11 @@
     "heroku",
     "alive"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afaucogney/heroku-alive"
+  },
+  "bugs" : "https://github.com/afaucogney/heroku-alive/issues",
   "author": "Anthony Faucogney <anthony.faucogney@millezimu.fr>",
   "license": "ISC"
 }
